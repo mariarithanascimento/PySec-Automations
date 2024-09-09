@@ -2,9 +2,17 @@
 > Hello!! Welcome to my portfolio project. Below you will find 7 automations created by me, all programmed in Python.  
 > Each one has a brief description of its functionality and how to run it on your machine.  
 > I hope you enjoy 😊
+## Summary
+- [Project 1: DoS Blocker](#project-1-dos-blocker)
+- [Project 2: Mini Firewall](#project-2-mini-firewall)
+- [Project 3: Simulation](#project-3-simulation)
+- [Project 4: OS Fingerprinting](#project-4-os-fingerprinting)
+- [Project 5: Ping Sweeper](#project-5-ping-sweeper)
+- [Project 6: Port Scanner](#project-6-port-scanner)
+- [Project 7: Service Fingerprinting](#project-7-service-fingerprinting)
 
 ## `Project 1: DoS Blocker`
-
+**[Click here and view the code.](https://github.com/mariarithanascimento/PySec-Automations/blob/173a95c2c31aa4a62a79b98bacb9d2c4fdabeaae/firewalls/DoS_Blocker.py)**
 ### Description:
 The **DoS Blocker** monitors network traffic to identify and block Denial of Service (DoS) attacks. It analyzes the packet rate from specific IPs, and if the rate exceeds a defined threshold (40 packets per second), the IP is blocked using `iptables`.
 
@@ -30,7 +38,7 @@ The **DoS Blocker** monitors network traffic to identify and block Denial of Ser
 - To monitor network traffic, root access is required.
 
 ## `Project 2: Mini Firewall`
-
+**[Click here and view the code.](https://github.com/mariarithanascimento/PySec-Automations/blob/173a95c2c31aa4a62a79b98bacb9d2c4fdabeaae/firewalls/Mini_Firewall.py)**
 ### Description:
 The **Mini Firewall** is a simple firewall that blocks IPs based on whitelist and blacklist files. It also detects the Nimda worm and blocks malicious IPs. Block events are logged into files.
 
@@ -60,7 +68,7 @@ The **Mini Firewall** is a simple firewall that blocks IPs based on whitelist an
 - The packet per second limit is also set to 40 and can be changed in the `THRESHOLD` variable.
 
 ## `Project 3: Simulation`
-
+**[Click here and view the code.](https://github.com/mariarithanascimento/PySec-Automations/blob/173a95c2c31aa4a62a79b98bacb9d2c4fdabeaae/firewalls/Simulation.py)**
 ### Description:
 The **Simulation** is a simple firewall simulation that generates random IP addresses and checks whether they match predefined block rules. If the IP is on the blocklist, the action will be "block"; otherwise, the action will be "allow."
 
@@ -80,7 +88,7 @@ The **Simulation** is a simple firewall simulation that generates random IP addr
 - A random number between 0 and 9999 is generated along with each IP, simulating various events.
 
 ## `Project 4: OS Fingerprinting`
-
+**[Click here and view the code.](https://github.com/mariarithanascimento/PySec-Automations/blob/173a95c2c31aa4a62a79b98bacb9d2c4fdabeaae/scanners/OS_Fingerprinting.py)**
 ### Description:
 The **OS Fingerprinting** scans a host to identify the operating system and services associated with different protocols and ports. It uses the `nmap` library to perform the scan and exports the results to a CSV file.
 
@@ -104,7 +112,7 @@ The **OS Fingerprinting** scans a host to identify the operating system and serv
 - `nmap` (must be installed on the system)
 
 ## `Project 5: Ping Sweeper`
-
+**[Click here and view the code.](https://github.com/mariarithanascimento/PySec-Automations/blob/173a95c2c31aa4a62a79b98bacb9d2c4fdabeaae/scanners/Ping_Sweeper.py)**
 ### Description:
 The **Ping Sweeper** performs a ping sweep on a network to identify hosts that are online. It uses the ICMP protocol to send packets and verify if the hosts respond.
 
@@ -129,7 +137,7 @@ The **Ping Sweeper** performs a ping sweep on a network to identify hosts that a
 - `netaddr` (for working with IP addresses and subnets)
 
 ## `Project 6: Port Scanner`
-
+**[Click here and view the code.](https://github.com/mariarithanascimento/PySec-Automations/blob/173a95c2c31aa4a62a79b98bacb9d2c4fdabeaae/scanners/Port_Scanner.py)**
 ### Description:
 The **Port Scanner** scans a network to identify active hosts and checks for open ports on each host. It uses `scapy` to send TCP packets and performs the port scan in parallel.
 
@@ -157,7 +165,7 @@ The **Port Scanner** scans a network to identify active hosts and checks for ope
 - The scope of the port scan is from 1 to 1023, but can be adjusted in the code.
 
 ## `Project 7: Service Fingerprinting`
-
+**[Click here and view the code.](https://github.com/mariarithanascimento/PySec-Automations/blob/173a95c2c31aa4a62a79b98bacb9d2c4fdabeaae/scanners/Service_Fingerprinting.py)**
 ### Description:
 The **Service Fingerprinting** performs a scan to identify service banners running on specific ports of a host. It attempts to connect to a service and returns the application banner, useful for detecting software versions.
 
