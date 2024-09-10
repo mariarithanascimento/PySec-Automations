@@ -26,6 +26,7 @@ The **DoS Blocker** monitors network traffic to identify and block Denial of Ser
     ```bash
     sudo python3 dos_blocker.py
     ```
+    **Or edit and run the code [DoS Blocker Tester](https://github.com/mariarithanascimento/PySec-Automations/blob/0957af6cb3bcb5167f15de49e943ec2fd426ecc8/testers/DoS_Blocker_Tester.py)**
 
 3. The script will start monitoring network traffic. When an IP sends packets beyond the limit, it will be blocked.
 
@@ -54,6 +55,7 @@ The **Mini Firewall** is a simple firewall that blocks IPs based on whitelist an
     ```bash
     sudo python3 mini_firewall.py
     ```
+    **Or edit and run the code [Nimda Packet](https://github.com/mariarithanascimento/PySec-Automations/blob/0957af6cb3bcb5167f15de49e943ec2fd426ecc8/testers/Nimda_Packet.py)**
 
 4. The firewall starts monitoring network traffic, blocking malicious IPs and logging the events in the `logs` directory.
 
